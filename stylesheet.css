@@ -1,0 +1,330 @@
+/* This is to make the areas easier to deal with by removing margins */
+* {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* This is to create the grid that will be the foundation of the entire website. It is very important that it is made correctly. */
+.main {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(100, minmax(1%, 1%));
+    grid-template-rows: repeat(100, minmax(1%, 1%));
+}
+
+.bannertop {
+    grid-area: 1 / 1 / span 25 / span 100;
+}
+
+.welcome {
+    grid-area: 26 / 1 / span 66 / span 90;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: lawngreen;
+}
+
+/* This is to style all of the links on the side. */
+.nspnumbers {
+    grid-area: 26 / 91 / span 16 / span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: blue;
+    font-size: clamp(10px, 2vmin, 40px);
+}
+
+.paris {
+    grid-area: 42 / 91 / span 16 / span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: lawngreen;
+    font-size: clamp(10px, 2vmin, 40px);
+}
+
+.solutions {
+    grid-area: 58 / 91 / span 16 / span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: blue;
+    font-size: clamp(10px, 2vmin, 40px);
+}
+
+.sources {
+    grid-area: 74 / 91 / span 16 / span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: lawngreen;
+    font-size: clamp(15px, 3.4vmin, 34px);
+}
+
+.otheractions {
+    grid-area: 85 / 91 / span 16 / span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: blue;
+    font-size: clamp(15px, 3.4vmin, 34px);
+}
+
+.section-information {
+    grid-area: 26 / 1 / span 75 / span 45;
+    justify-content: center;
+    color: yellow;
+    background-color: blue;
+}
+
+/* This is to make all of the texts the right size and orientation. */
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    font-size: clamp(15px, 2.1vh, 20px);
+    text-align: center;
+}
+
+.important {
+    color: red;
+}
+
+/* This is the bulk of the CSS. Each of these declarations targets the <div>s mentioned in the HTML, which will allow me to put all of the containers in the correct spot and make them the same size. */
+.top-link {
+    grid-area: 26 / 1 / span 4 / span 90;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    color: yellow
+}
+
+.bottom-link {
+    grid-area: 96 / 1 / span 5 / span 90;
+    background-color: blue;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-link {
+    color: yellow;
+}
+
+.righttext {
+    grid-area: 26 / 47 / span 68 / span 44;
+    background-color: blue;
+    color: lawngreen;
+    border: 3px;
+    border-color: blue;
+    text-align: center;
+}
+
+.midline {
+    grid-area: 26 / 46 / span 66 / span 1;
+    background-color: lawngreen;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.lefttext {
+    grid-area: 26 / 1 / span 67 / span 45;
+    background-color: blue;
+    color: lawngreen;
+    overflow: auto;
+}
+
+.date {
+    grid-area: 76 / 1 / span 20 / span 45;
+    background-color: yellow;
+    color: blue;
+}
+
+.intro-blurb {
+    grid-area: 93 / 1 / span 8 / span 90;
+    background-color: blue;
+    color: green;
+    font-size: clamp(15px, 0.5vmin, 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.north-star {
+    grid-area: 26 / 1 / span 23 / span 90;
+    background-color: blue;
+    color: yellow;
+}
+
+.seeonee {
+    grid-area: 49 / 1 / span 23 / span 90;
+    background-color: yellow;
+    color: blue;
+}
+
+.chief-scout {
+    grid-area: 72 / 1 / span 24 / span 90;
+    background-color: blue;
+    color: yellow;
+}
+
+.more-info {
+    grid-area: 96 / 1 / span 5 / span 90;
+    background-color: yellow;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabin-details {
+    grid-area: 72 / 1 / span 24 / span 90;
+    background-color: blue;
+    color: yellow;
+}
+
+.money-list {
+    font-size: clamp(15px, 2.1vh, 20px);
+    text-align: left;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mailto {
+    color: yellow;
+    font-size: clamp(15px, 4vh, 60px);
+}
+
+.loginpage {
+    grid-area: 26 / 1 / span 75 / span 90;
+    background-color: blue;
+    text-align: center;
+    color: yellow;
+}
+
+.beaverslide {
+    grid-area: 30 / 46 / span 65 / span 45;
+    background-color: yellow;
+}
+
+.img_ad {
+    grid-area: 26 / 46 / span 4 / span 45;
+    background-color: blue;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_source {
+    grid-area: 95 / 46 / span 6 / span 45;
+    background-color: blue;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camp_calendar {
+    grid-area: 26 / 1 / span 44 / span 90;
+    background-color: blue;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camp_img1 {
+    grid-area: 70 / 1 / span 26 / span 30;
+    background-color: yellow;
+}
+
+.camp_img2 {
+    grid-area: 70 / 31 / span 26 / span 30;
+    background-color: blue;
+}
+
+.camp_img3 {
+    grid-area: 70 / 61 / span 26 / span 30;
+    background-color: yellow;
+}
+
+.cabin_img {
+    grid-area: 26 / 1 / span 46 / span 90;
+    background-color: blue;
+}
+
+.fund_img1 {
+    grid-area: 26 / 46 / span 46 / span 22;
+    background-color: blue;
+}
+
+.fund_img2 {
+    grid-area: 26 / 68 / span 46 / span 23;
+    background-color: yellow;
+}
+
+.fund_img3 {
+    grid-area: 72 / 46 / span 24 / span 45;
+    background-color: blue;
+}
+
+.information1 {
+    grid-area: 30 / 1 / span 66 / span 45;
+    background-color: yellow;
+    color: blue;
+}
+
+.welcome10 {
+    grid-area: 26 / 1 / span 75 / span 90;
+    justify-content: center;
+    color: yellow;
+    background-color: blue;
+}
+
+.ybottom-link {
+    grid-area: 96 / 1 / span 5 / span 90;
+    background-color: yellow;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    grid-area: 30 / 1 / span 66 / span 90;
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    background-color: blue;
+}
